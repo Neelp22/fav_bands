@@ -1,0 +1,16 @@
+<form action = "/bands/<%= @band.id %>/member_create" method ="post">
+	<div>
+	<label>Name:</label>
+		<input type ="text" name = 'band_member[name]' autofocus />
+	</div>
+
+	<div>
+	<label>Age:</label>
+		<input type = "text" name = 'band_member[age]'>		
+	</div>
+
+	<input type = "submit">
+</form>
+
+
+

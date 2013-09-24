@@ -1,0 +1,28 @@
+<h2> Favorite Bands </h2>
+<br>
+<form action = "/bands/new">
+	 <input type="submit" value="Add a new band">
+</form>	
+<hr>
+
+<% @band.each do |band| %>
+<ul>
+	<li>Band name: <%= band.name %></li>
+	<li>Number of albums: <%= band.num_albums %></li>
+	<li>Lead singer: <%= band.lead_singer %></li>
+</ul>
+
+<form action = "/bands/<%= band.id %>/edit">
+	 <input type="submit" value="Edit this band">
+</form>
+
+<form action = "/bands/<%= band.id %>/band_member">
+	 <input type="submit" value="Add a band member">
+</form>		
+
+<form action = "/bands/<%= band.id %>/delete">
+	 <input type="submit" value="Delete this band">
+</form>	
+
+<hr>
+<% end %>

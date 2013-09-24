@@ -1,0 +1,22 @@
+<form action = "/bands/<%= @band.id %>/submit_edit" method ="post">
+	<div>
+	<label>Name:</label>
+		<input type ="text" name = 'band[name]' value = '<%= @band.name %>' autofocus />
+	</div>
+
+	<div>
+	<label>Number of albums:</label>
+		<input type = "text" name = 'band[num_albums]' value = '<%= @band.num_albums %>'>		
+	</div>
+
+	<div>
+	<label>Lead singer:</label>
+		<input type = "text" name = 'band[lead_singer]' value = '<%= @band.lead_singer %>'>
+	</div>
+
+
+	<input type = "submit">
+</form>
+
+
+
