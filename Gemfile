@@ -5,6 +5,8 @@ gem 'rails', '3.2.13'
 
 gem 'pg'
 
+gem 'uglifier'
+
 group :development, :test do
   gem 'rspec-rails', '~> 2.0'
 end
