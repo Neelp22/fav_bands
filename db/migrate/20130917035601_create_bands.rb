@@ -1,4 +1,4 @@
-class CreateBandsls < ActiveRecord::Migration
+class CreateBands < ActiveRecord::Migration
   def change
     create_table :bands do |t|
     	t.string :name
@@ -9,3 +9,4 @@ class CreateBandsls < ActiveRecord::Migration
     end
   end
 end
+
